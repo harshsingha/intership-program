@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>slide-down</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#a").click(function(){
+                    $("#b").slideDown("slow")
+                });
+            });
+
+        </script>
+        <style>
+            #a,#b{
+                background-color: aqua;
+                text-align: center;
+                padding: 10px;
+                border-radius: 2px;
+                border: 2px solid green;
+                font-size: 20px;
+                font-style: italic;
+            }
+            #b{
+                display: none;
+                padding: 40px!important;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="a">Slide down to see my name</div>
+        <div id="b">Harsh Singhaniya</div>
+    </body>
+</html>

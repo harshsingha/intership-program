@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slide-Up</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#a").click(function(){
+                  $("#b").slideUp("slow");
+                });
+              });
+        </script>
+              
+        <style>
+            #a, #b {
+                padding: 10px;
+                text-align: center;
+                background-color: #e5eecc;
+                border: solid 1px #c3c3c3;
+                font-size: large;
+                font-style: italic;
+                border: 3px solid red;
+              }
+              
+              #b {
+                padding: 50px;
+              }
+        </style>
+    </head>
+    <body>
+        <div id="a">Harsh Singhaniya</div>
+        <div id="b">I am student of Silver Oak University</div>
+    </body>
+</html>
